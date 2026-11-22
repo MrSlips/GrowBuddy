@@ -1,0 +1,32 @@
+{
+  "id": "/",
+  "name": "GrowBuddy - Dunia Pokok Maya",
+  "short_name": "GrowBuddy",
+  "description": "Permainan penjagaan pokok maya interaktif dengan kitaran pertumbuhan masa nyata, pilihan benih tropika, koleksi pokok matang, dan lencana pencapaian.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#1f6e43",
+  "background_color": "#f6f8f4",
+  "lang": "ms",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

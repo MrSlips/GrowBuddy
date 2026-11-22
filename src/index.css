@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f6f8f4;
+    color: #1c2920;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes plantSway {
+  0%,
+  100% {
+    transform: rotate(-1.2deg);
+  }
+  50% {
+    transform: rotate(1.2deg);
+  }
+}
+
+@keyframes actionFloat {
+  0% {
+    transform: translateY(10px) scale(0.8);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(-6px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-34px) scale(0.95);
+    opacity: 0;
+  }
+}
+
+@keyframes modalRise {
+  0% {
+    transform: translateY(12px) scale(0.97);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-plant-sway {
+  transform-origin: bottom center;
+  animation: plantSway 4.8s ease-in-out infinite;
+}
+
+.animate-action-float {
+  animation: actionFloat 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-modal-rise {
+  animation: modalRise 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-plant-sway,
+  .animate-action-float,
+  .animate-modal-rise {
+    animation: none !important;
+  }
+}

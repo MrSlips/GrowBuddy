@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25804f" />
+      <stop offset="100%" stop-color="#175432" />
+    </linearGradient>
+    <linearGradient id="leafLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bbf7d0" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+    <linearGradient id="leafRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded App Icon Surface -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Subtle Sunlight Halo -->
+  <circle cx="256" cy="212" r="144" fill="#ffffff" fill-opacity="0.08" />
+
+  <!-- Terracotta Pot Shadow -->
+  <ellipse cx="256" cy="414" rx="102" ry="16" fill="#0f3821" fill-opacity="0.35" />
+
+  <!-- Terracotta Pot Body -->
+  <path
+    d="M172 308 L340 308 L318 402 C315 412 306 418 296 418 L216 418 C206 418 197 412 194 402 Z"
+    fill="#c26d47"
+    stroke="#7c3d22"
+    stroke-width="8"
+    stroke-linejoin="round"
+  />
+  <!-- Pot Rim -->
+  <rect
+    x="156"
+    y="282"
+    width="200"
+    height="32"
+    rx="12"
+    fill="#d9825b"
+    stroke="#7c3d22"
+    stroke-width="8"
+  />
+  <!-- Rich Soil -->
+  <ellipse cx="256" cy="282" rx="82" ry="12" fill="#4f3524" />
+
+  <!-- Sprout Stem -->
+  <path
+    d="M256 282 Q254 220 256 168"
+    fill="none"
+    stroke="#dcfce7"
+    stroke-width="16"
+    stroke-linecap="round"
+  />
+
+  <!-- Left Leaf -->
+  <path
+    d="M256 212 C210 170 152 178 160 226 C168 264 234 242 256 212 Z"
+    fill="url(#leafLeft)"
+    stroke="#14532d"
+    stroke-width="7"
+    stroke-linejoin="round"
+  />
+
+  <!-- Right Leaf -->
+  <path
+    d="M256 184 C302 138 364 148 354 198 C346 238 278 216 256 184 Z"
+    fill="url(#leafRight)"
+    stroke="#14532d"
+    stroke-width="7"
+    stroke-linejoin="round"
+  />
+
+  <!-- Center Bud -->
+  <ellipse
+    cx="256"
+    cy="148"
+    rx="16"
+    ry="24"
+    fill="#fef08a"
+    stroke="#14532d"
+    stroke-width="6"
+  />
+</svg>

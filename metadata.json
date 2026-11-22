@@ -1,0 +1,8 @@
+{
+  "name": "Remix GrowBuddy - Dunia Pokok Maya",
+  "description": "Permainan penjagaan pokok maya interaktif dengan kitaran pertumbuhan masa nyata, pilihan benih tropika, koleksi pokok matang, dan lencana pencapaian.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
